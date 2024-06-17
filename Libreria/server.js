@@ -22,6 +22,7 @@ app.get("/", (req, res) => {
 });
 
 require("./app/routes/book.routes.js")(app);
+require("dotenv").config();
 
 // set port, listen for requests
 const PORT = process.env.NODE_DOCKER_PORT || 8080;
