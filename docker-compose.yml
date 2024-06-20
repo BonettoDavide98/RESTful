@@ -22,7 +22,7 @@ services:
     depends_on:
       mysqldb:
         condition: service_healthy
-    build: ./Libreria
+    build: ./libreria
     restart: unless-stopped
     env_file: ./.env
     ports:
